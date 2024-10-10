@@ -30,10 +30,6 @@ services:
             - driver: nvidia
               count: all
               capabilities: [gpu]
-    command:
-      - ollama pull llama:latest 
-      - ollama pull starcoder2:latest
-      - ollama pull mistral:latest
 
 volumes:
   ollama-local:
